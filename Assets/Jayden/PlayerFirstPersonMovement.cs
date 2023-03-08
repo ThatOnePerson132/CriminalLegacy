@@ -14,7 +14,7 @@ public class PlayerFirstPersonMovement : MonoBehaviour
     public bool isGrounded;
     public float jumpForce = 2.0f;
 
-    
+    public GameObject oof;
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
