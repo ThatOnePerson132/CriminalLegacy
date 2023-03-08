@@ -13,11 +13,13 @@ public class PlayerFirstPersonMovement : MonoBehaviour
     public Vector3 jump;
     public bool isGrounded;
     public float jumpForce = 2.0f;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
+
     }
 
     void Update()
@@ -35,6 +37,7 @@ public class PlayerFirstPersonMovement : MonoBehaviour
             velocity -= Gravity * Time.deltaTime;
             characterController.Move(new Vector3(0, velocity, 0));
         }
+
     }
     void FixedUpdate()
     {
