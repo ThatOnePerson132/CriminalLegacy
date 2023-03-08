@@ -460,6 +460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1796335805373459895, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.2784314
+      objectReference: {fileID: 0}
     - target: {fileID: 1796335805726266005, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -547,6 +551,14 @@ PrefabInstance:
     - target: {fileID: 1796335805726266009, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796335805936487003, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796335805936487005, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.31764707
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
