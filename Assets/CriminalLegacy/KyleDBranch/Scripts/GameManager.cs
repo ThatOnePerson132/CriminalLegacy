@@ -7,13 +7,18 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
+    public int ammo;
     public int health;
     public int stamina;
     public int bananasCollected;
 
+    public TextMeshProUGUI ammoDisplay;
     public TextMeshProUGUI healthDisplay;
     public TextMeshProUGUI staminaDisplay;
     public TextMeshProUGUI bananaMeter;
+
+    public RawImage stealthIcon;
+    public RawImage stealthIcon2;
 
     public bool isGameActive;
 
@@ -28,6 +33,9 @@ public class GameManager : MonoBehaviour
 
         bananasCollected = 0;
         bananaMeter.text = "BananasCollected: " + bananasCollected;
+
+        ammo = 100;
+        ammoDisplay.text = "Ammo: " + ammo + "/100";
     }
 
     // Update is called once per frame
