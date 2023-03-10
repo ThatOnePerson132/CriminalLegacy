@@ -441,8 +441,13 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
+    m_Modifications
     - target: {fileID: 3370978926667672561, guid: b4768d91242a5f44a993190910c1b2e1, type: 3}
+    - target: {fileID: 1796335805373459895, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.2784314
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796335805726266005, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
@@ -607,9 +612,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+
     - target: {fileID: 6658271728706173102, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
       propertyPath: m_Name
       value: Canvas
+    - target: {fileID: 1796335805936487003, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796335805936487005, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3176470
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f1c3edac9f22c449e819e0a1b7ecc1, type: 3}
