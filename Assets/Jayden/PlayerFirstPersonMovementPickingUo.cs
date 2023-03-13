@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFirstPersonMovement : MonoBehaviour
+public class PlayerFirstPersonMovementPickingUo : MonoBehaviour
 {
     CharacterController characterController;
     public float MovementSpeed = 1;
