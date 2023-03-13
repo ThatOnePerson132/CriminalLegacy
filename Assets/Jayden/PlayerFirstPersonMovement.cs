@@ -13,6 +13,7 @@ public class PlayerFirstPersonMovement : MonoBehaviour
     public Vector3 jump;
     public bool isGrounded;
     public float jumpForce = 2.0f;
+    public bool canPickUp;
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -22,6 +23,7 @@ public class PlayerFirstPersonMovement : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(canPickUp);
         float horizontal = Input.GetAxis("Horizontal") * MovementSpeed;
         float vertical = Input.GetAxis("Vertical") * MovementSpeed;
         characterController.Move((cam.transform.right * horizontal + cam.transform.forward * vertical) * Time.deltaTime);
@@ -34,6 +36,13 @@ public class PlayerFirstPersonMovement : MonoBehaviour
         {
             velocity -= Gravity * Time.deltaTime;
             characterController.Move(new Vector3(0, velocity, 0));
+        }
+        if(canPickUp == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("Yes");
+            }
         }
     }
     void FixedUpdate()
@@ -51,5 +60,20 @@ public class PlayerFirstPersonMovement : MonoBehaviour
     void OnCollisionExit()
     {
         isGrounded = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Banana"))
+        {
+            canPickUp = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Banana"))
+        {
+            canPickUp = false;
+        }
     }
 }
