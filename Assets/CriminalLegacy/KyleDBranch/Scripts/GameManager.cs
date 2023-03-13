@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 
+
+    public int TitleScreen;
+    public int inGameUI;
     public int ammo;
     public int health;
     public int stamina;
@@ -20,7 +23,7 @@ public class GameManager : MonoBehaviour
     public RawImage stealthIcon;
     public RawImage stealthIcon2;
 
-    public bool isGameActive;
+    public bool isGameActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +44,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isGameActive)
+        {
+            //TitleScreen
+        }
     }
 }
